@@ -1,0 +1,5 @@
+add_test([=[QuickSortTest.SortEmpty]=]  /Users/harwindermalhi/ecs36c/ecs36c-hw3/build/run_tests [==[--gtest_filter=QuickSortTest.SortEmpty]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[QuickSortTest.SortEmpty]=]  PROPERTIES WORKING_DIRECTORY /Users/harwindermalhi/ecs36c/ecs36c-hw3/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[QuickSortTest.SortVectorWithOneElement]=]  /Users/harwindermalhi/ecs36c/ecs36c-hw3/build/run_tests [==[--gtest_filter=QuickSortTest.SortVectorWithOneElement]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[QuickSortTest.SortVectorWithOneElement]=]  PROPERTIES WORKING_DIRECTORY /Users/harwindermalhi/ecs36c/ecs36c-hw3/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  run_tests_TESTS QuickSortTest.SortEmpty QuickSortTest.SortVectorWithOneElement)
